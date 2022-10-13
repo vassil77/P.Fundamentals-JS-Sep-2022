@@ -86,12 +86,8 @@ function f2(params) {
                 } else {
                     console.log(`${carList[index].car} mileage decreased by ${revert.km} kilometers`);
                 }
-
                 break;
-
         }
-
-
 
         command = input.shift();
     }
