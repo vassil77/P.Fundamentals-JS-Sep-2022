@@ -1,0 +1,354 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:https://softuni.bg/
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Sofia
+X-LIC-LOCATION:Europe/Sofia
+BEGIN:DAYLIGHT
+TZNAME:EEST
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:EET
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Discrete Mathematics - part 1 - Logics20221031T180000
+DTSTART:20221031T180000
+DTEND:20221031T210000
+SUMMARY:Discrete Mathematics - part 1 - Logics
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47678
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47678
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Software Development Concepts - Part 220221101T183000
+DTSTART:20221101T183000
+DTEND:20221101T213000
+SUMMARY:Software Development Concepts - Part 2
+URL:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44424
+DESCRIPTION:Programming Fundamentals - септември 2022
+LOCATION:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44424
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Associative Arrays20221102T180000
+DTSTART:20221102T180000
+DTEND:20221102T210000
+SUMMARY:Associative Arrays
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44549
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44549
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Discrete Mathematics - part 2 - Graphs20221102T180000
+DTSTART:20221102T180000
+DTEND:20221102T210000
+SUMMARY:Discrete Mathematics - part 2 - Graphs
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47679
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47679
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exercise: Associative Arrays20221104T183000
+DTSTART:20221104T183000
+DTEND:20221104T213000
+SUMMARY:Exercise: Associative Arrays
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44550
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44550
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Probability, statistics and combinatorics20221107T180000
+DTSTART:20221107T180000
+DTEND:20221107T210000
+SUMMARY:Probability, statistics and combinatorics
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47680
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47680
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exercise: Probability, statistics and combinatorics20221109T180000
+DTSTART:20221109T180000
+DTEND:20221109T210000
+SUMMARY:Exercise: Probability, statistics and combinatorics
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47681
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47681
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Text Processing 20221109T183000
+DTSTART:20221109T183000
+DTEND:20221109T210000
+SUMMARY:Text Processing 
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44552
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44552
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Bitwise Operations20221110T183000
+DTSTART:20221110T183000
+DTEND:20221110T213000
+SUMMARY:Bitwise Operations
+URL:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44427
+DESCRIPTION:Programming Fundamentals - септември 2022
+LOCATION:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44427
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exercise: Text Processing 20221111T183000
+DTSTART:20221111T183000
+DTEND:20221111T213000
+SUMMARY:Exercise: Text Processing 
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44553
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44553
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Basics Algebra20221114T180000
+DTSTART:20221114T180000
+DTEND:20221114T210000
+SUMMARY:Basics Algebra
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47682
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47682
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Problem Solving20221115T183000
+DTSTART:20221115T183000
+DTEND:20221115T213000
+SUMMARY:Problem Solving
+URL:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44430
+DESCRIPTION:Programming Fundamentals - септември 2022
+LOCATION:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44430
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Regular Expressions20221116T180000
+DTSTART:20221116T180000
+DTEND:20221116T210000
+SUMMARY:Regular Expressions
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44555
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44555
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exercise: Basic Algebra20221116T180000
+DTSTART:20221116T180000
+DTEND:20221116T210000
+SUMMARY:Exercise: Basic Algebra
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47683
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47683
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exercise: Regular Expressions20221118T183000
+DTSTART:20221118T183000
+DTEND:20221118T213000
+SUMMARY:Exercise: Regular Expressions
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44556
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44556
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exam preparation20221121T180000
+DTSTART:20221121T180000
+DTEND:20221121T210000
+SUMMARY:Exam preparation
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47684
+DESCRIPTION:Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47684
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Database Basics20221122T183000
+DTSTART:20221122T183000
+DTEND:20221122T213000
+SUMMARY:Database Basics
+URL:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44433
+DESCRIPTION:Programming Fundamentals - септември 2022
+LOCATION:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44433
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exam Preparation20221123T180000
+DTSTART:20221123T180000
+DTEND:20221123T210000
+SUMMARY:Exam Preparation
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44558
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44558
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Exam Preparation20221125T183000
+DTSTART:20221125T183000
+DTEND:20221125T213000
+SUMMARY:Exam Preparation
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44559
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44559
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Regular Exam20221126T090000
+DTSTART:20221126T090000
+DTEND:20221126T120000
+SUMMARY:Regular Exam
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47685
+DESCRIPTION:Практически изпит - Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47685
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Regular Exam20221126T090000
+DTSTART:20221126T090000
+DTEND:20221126T123000
+SUMMARY:Regular Exam
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47685
+DESCRIPTION:Теоретичен изпит - Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47685
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:QA Introduction20221129T183000
+DTSTART:20221129T183000
+DTEND:20221129T213000
+SUMMARY:QA Introduction
+URL:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44436
+DESCRIPTION:Programming Fundamentals - септември 2022
+LOCATION:https://softuni.bg//trainings/3835/programming-fundamentals-september-2022#lesson-44436
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Basic Web Project20221130T180000
+DTSTART:20221130T180000
+DTEND:20221130T210000
+SUMMARY:Basic Web Project
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44561
+DESCRIPTION:Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44561
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Retake Exam20221203T090000
+DTSTART:20221203T090000
+DTEND:20221203T120000
+SUMMARY:Retake Exam
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47686
+DESCRIPTION:Практически изпит - Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47686
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Retake Exam20221203T090000
+DTSTART:20221203T090000
+DTEND:20221203T123000
+SUMMARY:Retake Exam
+URL:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47686
+DESCRIPTION:Теоретичен изпит - Fundamentals in Mathematics - октомври 2022
+LOCATION:https://softuni.bg//trainings/3917/fundamentals-in-mathematics-october-2022#lesson-47686
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Regular Final Exam20221204T090000
+DTSTART:20221204T090000
+DTEND:20221204T150000
+SUMMARY:Regular Final Exam
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44562
+DESCRIPTION:Практически изпит - Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44562
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Regular Final Exam20221204T090000
+DTSTART:20221204T090000
+DTEND:20221204T193000
+SUMMARY:Regular Final Exam
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44562
+DESCRIPTION:Теоретичен изпит - Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44562
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Retake Mid Exam20221208T090000
+DTSTART:20221208T090000
+DTEND:20221208T150000
+SUMMARY:Retake Mid Exam
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44563
+DESCRIPTION:Практически изпит - Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44563
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Retake Final Exam20221212T090000
+DTSTART:20221212T090000
+DTEND:20221212T150000
+SUMMARY:Retake Final Exam
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44564
+DESCRIPTION:Практически изпит - Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44564
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20221031T095600
+UID:Retake Final Exam20221212T090000
+DTSTART:20221212T090000
+DTEND:20221212T193000
+SUMMARY:Retake Final Exam
+URL:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44564
+DESCRIPTION:Теоретичен изпит - Programming Fundamentals with JavaScript - септември 2022
+LOCATION:https://softuni.bg//trainings/3839/programming-fundamentals-with-javascript-september-2022#lesson-44564
+PRIORITY:3
+END:VEVENT
+END:VCALENDAR

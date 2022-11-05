@@ -8,7 +8,7 @@ function f2(params) {
         switch (commandLine[0]) {
             case 'Loot':
                 commandLine.shift();
-                for (let i =0; i < commandLine.length; i++) {
+                for (let i = 0; i < commandLine.length; i++) {
                     if (!loot.includes(commandLine[i])) {
                         loot.unshift(commandLine[i]);
                     }
@@ -41,10 +41,7 @@ function f2(params) {
                     stolen = loot.splice(0);
                 }
                 console.log(stolen.join(', '));
-
                 break;
-
-
         }
         commandLine = params.shift();
     }

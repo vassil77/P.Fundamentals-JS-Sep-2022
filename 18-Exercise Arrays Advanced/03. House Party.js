@@ -2,8 +2,8 @@ function f2(params) {
     let result = [];
     let command;
     for (let i = 0; i < params.length; i++) {
-        command = params[i];
-        command = command.split(' ');
+        command = params[i].split(' ');
+        
         switch (command[2]) {
             case 'going!':
                 if (!result.includes(command[0])) {
@@ -12,7 +12,6 @@ function f2(params) {
                     console.log(`${command[0]} is already in the list!`);
                 }
                 break;
-
             case 'not':
                 if (result.includes(command[0])) {
                     let index = result.indexOf(command[0]);
@@ -21,11 +20,7 @@ function f2(params) {
                     console.log(`${command[0]} is not in the list!`);
                 }
                 break;
-
-
         }
-
-
     }
 
 
