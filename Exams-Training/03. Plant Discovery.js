@@ -1,59 +1,51 @@
 function f2(params) {
     let input = params;
+    //Store Initial Info
     let n = input.shift();
-    const result = [];
-
-    result[0] = {
-        plant: "",
-        rarity: 0,
-        rating: 0,
-        counterRating: 0
-    };
+    let result = [];
 
     for (let i = 0; i < n; i++) {
-        let buffer = (input.shift()).split("<->");
+        let [plant, rarity] = input.shift().split("<->");
+        rarity = Number(rarity);
         let isIn = false;
 
         for (let j = 0; j < i; j++) {
-            if (result[j].plant === buffer[0]) {
-                result[j].rarity = Number(buffer[1]);
+            if (result[j].plant === plant) {
+
+                result[j].rarity = rarity;
                 isIn = true;
             }
         }
 
-        if (isIn) {
-            n--;
-        }
-
         if (!isIn) {
-            result[i] = {
-                plant: "",
-                rarity: 0,
+            let currentPlant = {
+                plant: plant,
+                rarity: rarity,
                 rating: 0,
                 counterRating: 0
             };
-            result[i].plant = buffer[0];
-            result[i].rarity = Number(buffer[1]);
+            result.push(currentPlant);
         }
     }
+    // console.log(...result);//test
+    //Execute Commands
 
-    // for (let i = 0; i < n; i++) {
-    //     console.log(result[i]);
-    //}
+    let line = input.shift();
 
-
-
-    let command = input.shift();
-    while (command !== "Exhibition") {
-        command = command.split(" ");
+    while (line !== "Exhibition") {
+        line = line.split(" ");
+        let command = line.shift();
+        let plant = line.shift();
         let isValid = false;
-        switch (command[0]) {
+        switch (command) {
+
             case "Rate:":
+                let rating = Number(line.pop());
                 isValid = false;
-                for (let i = 0; i < n; i++) {
-                    if (command[1] === result[i].plant) {
-                        result[i].rating += Number(command[3]);
-                        result[i].counterRating++;
+                for (let el of result) {
+                    if (plant === el.plant) {
+                        el.rating += rating;
+                        el.counterRating++;
                         isValid = true;
                     }
                 }
@@ -64,10 +56,11 @@ function f2(params) {
                 break;
 
             case "Update:":
+                let newRarity = Number(line.pop());
                 isValid = false;
-                for (let i = 0; i < n; i++) {
-                    if (command[1] === result[i].plant) {
-                        result[i].rarity = Number(command[3]);
+                for (let el of result) {
+                    if (plant === el.plant) {
+                        el.rarity = newRarity;
                         isValid = true;
                     }
                 }
@@ -79,10 +72,10 @@ function f2(params) {
 
             case "Reset:":
                 isValid = false;
-                for (let i = 0; i < n; i++) {
-                    if (command[1] === result[i].plant) {
-                        result[i].rating = 0;
-                        result[i].counterRating = 0;
+                for (let el of result) {
+                    if (plant === el.plant) {
+                        el.rating = 0;
+                        el.counterRating = 0;
                         isValid = true;
                     }
                 }
@@ -97,34 +90,35 @@ function f2(params) {
                 console.log(`error`);
                 break;
         }
-        command = input.shift();
+        line = input.shift();
     }
 
-
-
+    //Print Result
     console.log(`Plants for the exhibition:`);
-    for (let i = 0; i < n; i++) {
-        if (result[i].rating === 0) {
-            console.log(`- ${result[i].plant}; Rarity: ${result[i].rarity}; Rating: ${(result[i].rating).toFixed(2)}`);
+    for (let el of result) {
+        if (el.rating === 0) {
+            console.log(`- ${el.plant}; Rarity: ${el.rarity}; Rating: ${(el.rating).toFixed(2)}`);
         } else {
-            console.log(`- ${result[i].plant}; Rarity: ${result[i].rarity}; Rating: ${(result[i].rating/result[i].counterRating).toFixed(2)}`);
+            console.log(`- ${el.plant}; Rarity: ${el.rarity}; Rating: ${(el.rating/el.counterRating).toFixed(2)}`);
         }
     }
 
 }
 //-----------------
 f2
-(["3",
-"Arnoldii<->4",
-"Woodii<->7",
-"Welwitschia<->2",
-"Rate: Woodii - 10",
-"Rate: Welwitschia - 7",
-"Rate: Arnoldii - 3",
-"Rate: wrong - 5",
-"Update: Woodii - 5",
-"Reset: Arnoldii",
-"Exhibition"])
+    ([
+        "3",
+        "Arnoldii<->4",
+        "Woodii<->7",
+        "Welwitschia<->2",
+        "Rate: Woodii - 10",
+        "Rate: Welwitschia - 7",
+        "Rate: Arnoldii - 3",
+        "Rate: Woodii - 5",
+        "Update: Woodii - 5",
+        "Reset: Arnoldii",
+        "Exhibition"
+    ])
 
 
 ;

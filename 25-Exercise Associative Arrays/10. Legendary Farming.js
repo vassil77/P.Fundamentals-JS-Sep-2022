@@ -103,6 +103,7 @@ function f2(params) {
 
     // console.log(keyList);
     // console.log(junkList);
+    // console.table(junkList);
 
 }
 

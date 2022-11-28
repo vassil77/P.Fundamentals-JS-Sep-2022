@@ -99,7 +99,7 @@ function f2(params) {
         HP: ${heroes[i][1]}
         MP: ${heroes[i][2]}`);
     }
-
+// console.table(heroes);
 }
 
 //-----------------

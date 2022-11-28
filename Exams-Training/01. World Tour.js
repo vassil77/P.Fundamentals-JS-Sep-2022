@@ -9,7 +9,6 @@ function f2(params) {
                 command = command.split(":");
                 if (0 <= Number(command[1]) && Number(command[1]) < list.length) {
                     list = list.slice(0, Number(command[1])) + command[2] + list.slice(Number(command[1]));
-                   
                 }
                 console.log(list);
                 break;
@@ -38,7 +37,8 @@ function f2(params) {
 
 //-----------------
 f2(
-    ["Hawai::Cyprys-Greece",
+    [
+        "Hawai::Cyprys-Greece",
         "Add Stop:7:Rome",
         "Remove Stop:11:16",
         "Switch:Hawai:Bulgaria",
