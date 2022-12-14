@@ -1,32 +1,32 @@
-function f2(params) {
-    let input = params;
-    let string = input.shift();
+function f2(string) {
 
+    let password = string.shift();
+    let newPassword = "";
 
-    let command = input.shift();
-    let buffer = "";
+    let command = string.shift();
+
 
     while (command !== "Done") {
         command = command.split(" ");
 
         switch (command[0]) {
             case "TakeOdd":
-                for (let i = 0; i < string.length; i++) {
-                    if (i % 2 === 1) {
-                        buffer += string[i];
+                for (let i = 0; i < password.length; i++) {
+                    if (i % 2 !== 0) {
+                        newPassword += password[i];
                     }
                 }
-                string = buffer;
-                console.log(string);
+                password = newPassword;
+                // console.log(password);
                 break;
 
 
             case "Cut":
                 let index = Number(command[1]);
                 let length = Number(command[2]);
-
-                string = string.substr(0, index) + string.substr(index + length);
-                console.log(string);
+                console.log(password); //test
+                password = password.substr(0, index) + password.substr(index + length);
+                console.log(password);
                 break;
 
             case "Substitute":
@@ -36,30 +36,30 @@ function f2(params) {
                 if (containsSpecialChars(substring)) {
                     let pattern = new RegExp("/" + substring, "g");
 
-                    if (string.search("/" + pattern) === -1) {
+                    if (password.search("/" + pattern) === -1) {
                         console.log(`Nothing to replace!`);
                     } else {
-                        string = string.replace(pattern, substitute);
-                        console.log(string);
+                        password = password.replace(pattern, substitute);
+                        // console.log(password);
                     }
-                }else{
+                } else {
                     let pattern = new RegExp(substring, "g");
-                    if (string.search(pattern) === -1) {
+                    if (password.search(pattern) === -1) {
                         console.log(`Nothing to replace!`);
                     } else {
-                        string = string.replace(pattern, substitute);
-                        console.log(string);
+                        password = password.replace(pattern, substitute);
+                        // console.log(password);
                     }
 
                 }
                 break;
         }
-        command = input.shift();
+        command = string.shift();
     }
 
     //console.log(string); //test
 
-    console.log(`Your password is: ${string}`);
+    console.log(`Your password is: ${password}`);
 
     function containsSpecialChars(str) {
         //const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
@@ -73,11 +73,11 @@ function f2(params) {
 
 //-----------------
 f2
-(["up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy",
-"TakeOdd",
-"Cut 18 2",
-"Substitute ! ***",
-"Substitute ? .!.",
-"Done"])
-
-;
+    ([
+        "up8rgoyg3r1atmlmpiunagt!-irs7!1fgulnnnqy",
+        "TakeOdd",
+        "Cut 18 2",
+        "Substitute ! ***",
+        "Substitute ? .!.",
+        "Done"
+    ]);

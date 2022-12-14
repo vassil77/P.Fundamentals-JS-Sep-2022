@@ -16,11 +16,11 @@ function f2(params) {
     while (command !== "End") {
         command = command.split(" - ");
         let index;
-        let hero;
+        let  hero = command[1];
         let amount;
         switch (command[0]) {
             case "CastSpell":
-                hero = command[1];
+               
                 let neededMP = command[2];
                 let spellName = command[3];
                 index = 0;
@@ -30,6 +30,7 @@ function f2(params) {
                         index = i;
                     }
                 }
+
                 if (heroes[index][2] >= neededMP) {
 
                     heroes[index][2] -= neededMP;
@@ -40,7 +41,7 @@ function f2(params) {
                 break;
 
             case "TakeDamage":
-                hero = command[1];
+                // hero = command[1];
                 let damage = command[2];
                 let attacker = command[3];
                 index = 0;
@@ -63,7 +64,7 @@ function f2(params) {
 
 
             case "Recharge":
-                hero = command[1];
+                // hero = command[1];
                 amount = command[2];
                 index = 0;
                 for (let i = 0; i < n; i++) {
@@ -78,7 +79,7 @@ function f2(params) {
 
 
             case "Heal":
-                hero = command[1];
+                // hero = command[1];
                 amount = command[2];
                 index = 0;
                 for (let i = 0; i < n; i++) {
@@ -99,7 +100,7 @@ function f2(params) {
         HP: ${heroes[i][1]}
         MP: ${heroes[i][2]}`);
     }
-// console.table(heroes);
+// console.table(heroes);//test
 }
 
 //-----------------

@@ -1,9 +1,6 @@
-function f2(params) {
-    let input = params;
+function f2(input) {
     let n = Number(input.shift());
-
-    let pattern = /\@{1}#{1,}[A-Z]{1,}[A-Za-z0-9]{4,}[A-Z]{1,}\@{1}#{1,}/g;
-
+    let pattern = /\@#+[A-Z][A-Za-z0-9]{4,}[A-Z]\@#+/g;
     for (let i = 0; i < n; i++) {
         let barcode = input.shift();
         let valid = barcode.match(pattern);
@@ -14,14 +11,10 @@ function f2(params) {
             if (group === null) {
                 console.log(`Product group: 00`);
             } else {
-
                 console.log(`Product group: ${group.join("")}`);
             }
         }
-
-
     }
-
 }
 
 //-----------------

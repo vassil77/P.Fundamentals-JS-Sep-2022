@@ -1,0 +1,24 @@
+ред 27 заменете със следното:
+
+if (discoveredPlants.hasOwnProperty(plantToUpdate)) {
+                discoveredPlants[plantToUpdate]['Rarity'] = Number(newRarity);
+            } else {
+                console.log('error');
+            }
+
+ред 33 заменете със следното:
+
+} else {
+                console.log('error');
+            }
+
+Налага се тъй като в условието пише:
+Note: If any given plant name is invalid, print "error"
+За Всяка Команда !!!
+
+
+
+
+
+
+В условието пише 
